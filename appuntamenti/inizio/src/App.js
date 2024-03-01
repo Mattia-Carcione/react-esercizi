@@ -1,10 +1,13 @@
 import List from "./List";
-import data from "./data";
 
 function App() {
   return (
-    <div className="App">
-      <h2> App</h2>
+    <div className="App container">
+      <h1 style={{color: "var(--bg-blue)"}}>Esercitazione Appuntamenti</h1>
+      <div className="people-list">
+        {/* richiamo il componente list */}
+        <List />
+      </div>
     </div>
   );
 }
