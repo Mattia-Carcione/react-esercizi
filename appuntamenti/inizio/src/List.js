@@ -1,4 +1,4 @@
-// Esercitazione 1: Hooks
+// Esercitazione 1: UseState Hooks
 // - Scrivere una funziona che rimuove da una lista una singola persona, 
 // che rimuove tutta la lista o che la ricaricarla.
 
