@@ -1,4 +1,3 @@
-import { useState, useEffect } from "react";
 import data from "./data";
 import Articolo from "./Articolo";
 
@@ -9,7 +8,13 @@ function App() {
   return (
     <section className="section-center">
       <div className="container">
-        <h2>DARK MODE APP</h2>
+        <button className="btn">Cambia</button>
+        <section className="article-section">
+          {/* richiamo il componente ciclando i dati e passandoli ad articolo */}
+          {data.map(el => (
+            <Articolo key={el.id} {...el} />
+          ))}
+        </section>
       </div>
     </section>
   );
