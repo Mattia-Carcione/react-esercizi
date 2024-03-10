@@ -26,6 +26,13 @@ const Slider = () => {
       return nextValue - 1;
     })
   }
+
+  // creo una funzione di autoslider
+  useEffect(() => {
+    const timer = setTimeout(() => next(), 5000);
+    return () => clearTimeout(timer);
+  }, [active]);
+
   return (
     // mappo reviews nel componente slide
     <section className="container slider">
