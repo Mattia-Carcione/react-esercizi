@@ -1,10 +1,10 @@
+// importo lo slider da components
+import { Slider } from "./components";
 
 function App() {
   return (
     <div className="App">
-      <section className="container slider">
-        Slider
-      </section>
+      <Slider />
     </div>
   );
 }
